@@ -15,6 +15,8 @@ initRoutes(app);
 app.use("/", express.static("./client/build"));
 
 const port = 3080;
-app.listen(port, () => {});
+app.listen(port, () => {
+    console.log(`Starting ${port}`);
+});
 
 export { app };
